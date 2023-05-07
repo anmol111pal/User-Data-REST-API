@@ -2,7 +2,7 @@ const User = require("../models/UserModel");
 
 const getData = async (req, res) => {
     console.log("Requesting all the data...");
-    const data = await User.find();
+    const data = await User.find().limit(10);
     res.status(200).json(data);
 }
 
