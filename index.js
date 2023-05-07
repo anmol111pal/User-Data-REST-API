@@ -18,5 +18,4 @@ app.use(express.urlencoded({extended:true}));
 
 app.listen(PORT, () => {
     console.log("Server running.");
-    require("./upload.js");
 });
